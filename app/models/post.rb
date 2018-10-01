@@ -9,4 +9,8 @@ class Post < ApplicationRecord
   validates :body, presence: true
   validates :body, length: { maximum: 3000, minimum: 1}
   validates :user, presence: true
+
+  def find_moderators_posts
+    User.where(moderator: true).find_each { |u| p u.posts }
+  end
 end
