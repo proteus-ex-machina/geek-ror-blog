@@ -30,10 +30,11 @@ end
 posts = Post.create! hash_posts
 
 hash_comments = 200.times.map do
+  commentable = ((rand(2) == 1) ? posts : users).sample
   {
     body: FFaker::HipsterIpsum.paragraph,
-    user: users.sample,
-    post: posts.sample
+    commentable_id: commentable.id,
+    commentable_type: commentable.class.to_s    
   }
 end
 Comment.create! hash_comments
