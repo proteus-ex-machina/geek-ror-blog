@@ -33,6 +33,7 @@ hash_comments = 200.times.map do
   commentable = ((rand(2) == 1) ? posts : users).sample
   {
     body: FFaker::HipsterIpsum.paragraph,
+    user: users.sample,
     commentable_id: commentable.id,
     commentable_type: commentable.class.to_s    
   }
