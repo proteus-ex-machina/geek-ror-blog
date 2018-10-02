@@ -11,6 +11,7 @@ class Post < ApplicationRecord
   validates :user, presence: true
 
   def find_moderators_posts
-    User.where(moderator: true).find_each { |u| p u.posts }
+    #User.where(moderator: true).find_each { |u| p u.posts }
+    Post.joins(:user).where(users: { moderator: true })
   end
 end
