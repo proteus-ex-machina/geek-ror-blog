@@ -51,3 +51,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use slim as template engine for this application
 gem 'slim-rails'
+
+# Use this gem for pagination
+gem 'kaminari'

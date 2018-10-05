@@ -23,5 +23,7 @@ table
         td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
 
 br
-
-= link_to 'New Post', new_post_path
+p
+  = link_to 'New Post', new_post_path
+p
+  = paginate @posts
