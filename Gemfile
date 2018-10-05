@@ -37,6 +37,9 @@ group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   # Fill db by test data
   gem 'ffaker'
+  # for debugging views and partials
+  gem 'jquery-rails'
+  gem 'xray-rails'
 end
 
 group :development do
@@ -51,3 +54,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # Use slim as template engine for this application
 gem 'slim-rails'
+
+# Use this gem for pagination
+gem 'kaminari'
