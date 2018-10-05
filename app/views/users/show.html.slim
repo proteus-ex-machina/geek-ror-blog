@@ -1,23 +1,39 @@
 p#notice = notice
 
 p
-  strong Name:
+  strong Name: 
   = @user.name
 p
-  strong Email:
+  strong Email: 
   = @user.email
 p
-  strong Moderator:
+  strong Moderator: 
   = @user.moderator
 p
-  strong Creator:
+  strong Creator: 
   = @user.creator
 p
-  strong Banned:
+  strong Banned: 
   = @user.banned
 p
-  strong Comments count:
+  strong Comments count: 
   = @user.comments_count
+
+- if @user.creator 
+  p 
+    strong Posts:
+    table
+      - @user.posts.order(:created_at).each do |post|
+        tr
+          td: b = post.title
+          td = post.body
+
+p
+  strong Comments:
+  table
+    - @user.comments.order(:created_at).each do |comment|
+      tr
+        td = comment.body
 
 => link_to 'Edit', edit_user_path(@user)
 '|
