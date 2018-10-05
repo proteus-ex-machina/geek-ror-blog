@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :users
   resources :posts
   root 'home#index'
   get 'posts/page/(:page(.:format))', to: 'posts#index'
