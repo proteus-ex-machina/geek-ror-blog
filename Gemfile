@@ -40,6 +40,7 @@ group :development, :test do
   # for debugging views and partials
   gem 'jquery-rails'
   gem 'xray-rails'
+  gem 'letter_opener'
 end
 
 group :development do
