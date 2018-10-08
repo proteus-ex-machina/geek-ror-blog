@@ -10,13 +10,13 @@ ru:
         blank: обязательно для заполнения
         too_short: слишком коротко
 
-    models:
-      user: Пользователи
-      post: Сообщения
+        models:
+        user: Пользователи
+        post: Сообщения
 
-    attributes:
-      user:
-        password: Пароль
-        password_confirmation: Потверждение
-        email: Email
-        name: Имя пользователя
+        attributes:
+          user:
+            password: Пароль
+            password_confirmation: Потверждение
+            email: Email
+            name: Имя пользователя
