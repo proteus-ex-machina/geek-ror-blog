@@ -57,3 +57,6 @@ gem 'slim-rails'
 
 # Use this gem for pagination
 gem 'kaminari'
+
+# Authentfication
+gem 'devise'
