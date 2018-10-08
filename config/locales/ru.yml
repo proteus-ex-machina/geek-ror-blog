@@ -1,7 +1,7 @@
 ru:
   label:
-    log_in: Вход
-    log_out: Выход
+    login: Вход
+    logout: Выход
     hello: Привет, %s
     registration: Регистрация
   activerecord:
