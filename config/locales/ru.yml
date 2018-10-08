@@ -4,6 +4,18 @@ ru:
     logout: Выход
     hello: Привет, %s
     registration: Регистрация
+    username: Имя пользователя
+    password: Пароль
+    email: Email
+    signup: Регистрация
+    remember_me: Запомнить
+    forgot_password: Восстановление пароля
+    not_receive_conf_instr: Не получены инструкции по подтверждению
+    not_recieve_unlock_instr: Не получены инструкции по разблокированию
+  button:
+    signup: Зарегистрироваться
+    login: Войти
+    get_instr_reset_password: Как сбросить пароль?
   activerecord:
     errors:
       messages:
