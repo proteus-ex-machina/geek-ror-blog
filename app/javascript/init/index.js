@@ -1,4 +1,3 @@
-import "bootstrap";
 import "./index.css";
 
 window.onload = function() {
